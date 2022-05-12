@@ -79,8 +79,8 @@
     e.preventDefault()
     console.log("clicked")
 
-    var email = document.getElementById("ticket-quantity")
-    var password = document.getElementById("email")
+    var email = document.getElementById("inputEmail")
+    var password = document.getElementById("inputPassword")
 
     auth.signInWithEmailAndPassword(email.value, password.value) 
     .then((userCredential) => {
