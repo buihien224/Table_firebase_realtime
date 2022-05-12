@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=2">
+<!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="css/dash.css">
+
+</head>
+
+<body>
+  <i class="fas fa-temperature-high"></i>
+  <div class="badge bg-secondary text-wrap" id="temp" style="width: 2rem"></div>
+  <i class="fas fa-tint"></i>
+  <div class="badge bg-secondary text-wrap" id="humi" style="width: 2rem"></div>
+  <p id="user"></p>
+  <button type="button" class="btn btn-secondary btn-rounded" id="signout">Logout</button>
+  <button type="button" class="btn btn-light btn-rounded" id="clear">CLEAR</button>
+  <button type="button" class="btn btn-info btn-rounded">Scan</button>
+  <button type="button" class="btn btn-danger btn-rounded">Check</button>
+    <table class="table table-hover">
+    <tr>
+      <td>ID</td>
+      <td>USER</td>
+      <td>CARD</td>
+    </tr>
+  </table>
+  <table class="table align-middle" id="table">
+    <tbody>
+          <tr>
+    </tr> 
+    </tbody>
+
+  </table>
+
+</body>
+  <!--Firebase SDK code below-->
+  <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+  <script src="js/dashboard.js"></script>
+</html>
